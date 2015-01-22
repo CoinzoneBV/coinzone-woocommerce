@@ -6,7 +6,7 @@
 
 #  System Requirements
 
-  * [merchant.coinzone.com](https://merchant.coinzone.com/signup?source=prestashop) account
+  * [merchant.coinzone.com](https://merchant.coinzone.com/signup?source=woocommerce) account
   * [Wordpress](https://wordpress.org/about/requirements/) 3.9+
   * [WooCommerce](http://docs.woothemes.com/document/server-requirements/) 2.2+
   * PHP 5.4+
