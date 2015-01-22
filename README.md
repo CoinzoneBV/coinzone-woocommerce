@@ -26,7 +26,7 @@ cloning this repository or downloading the .zip file from the
 
 3. Go to your WordPress administration. WooCommerce -&gt; Settings -&gt; Checkout click [Coinzone]
 
-4. Don't have a Coinzone account? [Sign up for free](https://merchant.coinzone.com/signup?source=prestashop)
+4. Don't have a Coinzone account? [Sign up for free](https://merchant.coinzone.com/signup?source=woocommerce)
 
 5. Fill in your Client Code and API Key. They can be found on the API tab of the Settings page in the [Coinzone Control Panel](https://merchant.coinzone.com/settings#apiTab).
 
@@ -37,9 +37,9 @@ cloning this repository or downloading the .zip file from the
 
   * Have questions? Please visit our [customer support site](http://support.coinzone.com/).
 
-##  PrestaShop Support
+##  WooCommerce Support
 
-  * [Homepage](http://www.prestashop.com)
-  * [Documentation](http://doc.prestashop.com/)
-  * [Support Forums](http://www.prestashop.com/forums/)
+  * [Homepage](http://www.woothemes.com/woocommerce/)
+  * [Documentation](http://docs.woothemes.com/)
+  * [Help Desk](https://support.woothemes.com/hc/en-us)
 
