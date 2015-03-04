@@ -3,7 +3,7 @@
  * Plugin Name: coinzone-woocommerce
  * Plugin URI: http://coinzone.com
  * Description: WooCommerce Bitcoin payments integration with Coinzone.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Coinzone
  * Author URI: http://coinzone.com
  */
@@ -222,7 +222,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                             'shippingCost' => $order->get_total_shipping(),
                             'discount' => $order->get_order_discount()
                         ),
-                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.0'
+                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.1'
                     );
 
                     $coinzone = new Coinzone($apiKey, $clientCode);
@@ -292,7 +292,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         'currency' => get_woocommerce_currency(),
                         'refNo' => $order->get_transaction_id(),
                         'reason' => $reason,
-                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.0'
+                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.1'
                     );
 
                     $coinzone = new Coinzone($apiKey, $clientCode);

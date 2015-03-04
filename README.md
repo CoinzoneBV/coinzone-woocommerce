@@ -15,9 +15,9 @@
 
 #  Configuration
 
-The current version of the woocommerce plugin is version 1.1.0. It is available either by
+The current version of the woocommerce plugin is version 1.1.1. It is available either by
 cloning this repository or downloading the .zip file from the
-[download page](https://github.com/CoinzoneBV/coinzone-woocommerce/releases/download/1.1.0/coinzone-woocommerce.zip).
+[download page](https://github.com/CoinzoneBV/coinzone-woocommerce/releases/download/1.1.1/coinzone-woocommerce.zip).
 
 1. Upload files to your WordPress installation.
 
