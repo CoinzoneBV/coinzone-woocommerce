@@ -203,7 +203,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                             'name' => $product->get_title(),
                             'quantity' => (int)$item['qty'],
                             'unitPrice' => $product->get_price(),
-                            'shortDescription' => $product->get_post_data()->post_excerpt,
+                            'shortDescription' => substr($product->get_post_data()->post_excerpt, 0, 250),
                             'imageUrl' => wp_get_attachment_image_src($product->get_image_id())[0]
                         );
                     }
