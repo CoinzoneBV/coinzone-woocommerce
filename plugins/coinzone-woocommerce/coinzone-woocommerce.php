@@ -3,7 +3,7 @@
  * Plugin Name: coinzone-woocommerce
  * Plugin URI: http://coinzone.com
  * Description: WooCommerce Bitcoin payments integration with Coinzone.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: Coinzone
  * Author URI: http://coinzone.com
  */
@@ -194,19 +194,19 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
 
                 try {
 
-                    /* add products ordered to API request */
-                    $items = $order->get_items();
-                    $displayItems = array();
-                    foreach ($items as $item) {
-                        $product = $order->get_product_from_item($item);
-                        $displayItems[] = array(
-                            'name' => $product->get_title(),
-                            'quantity' => (int)$item['qty'],
-                            'unitPrice' => $product->get_price(),
-                            'shortDescription' => substr($product->get_post_data()->post_excerpt, 0, 250),
-                            'imageUrl' => wp_get_attachment_image_src($product->get_image_id())[0]
-                        );
-                    }
+//                    /* add products ordered to API request */
+//                    $items = $order->get_items();
+//                    $displayItems = array();
+//                    foreach ($items as $item) {
+//                        $product = $order->get_product_from_item($item);
+//                        $displayItems[] = array(
+//                            'name' => $product->get_title(),
+//                            'quantity' => (int)$item['qty'],
+//                            'unitPrice' => $product->get_price(),
+//                            'shortDescription' => substr($product->get_post_data()->post_excerpt, 0, 250),
+//                            'imageUrl' => wp_get_attachment_image_src($product->get_image_id())[0]
+//                        );
+//                    }
 
                     // Create payload array
                     $payload = array(
@@ -216,13 +216,13 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         'email' => $order->billing_email,
                         'redirectUrl' => $redirectUrl,
                         'notificationUrl' => $notify_url = WC()->api_request_url('WC_Gateway_Coinzone'),
-                        'displayOrderInformation' => array(
-                            'items' => $displayItems,
-                            'tax' => WC()->cart->get_taxes_total(true, true),
-                            'shippingCost' => $order->get_total_shipping(),
-                            'discount' => $order->get_order_discount()
-                        ),
-                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.1'
+//                        'displayOrderInformation' => array(
+//                            'items' => $displayItems,
+//                            'tax' => WC()->cart->get_taxes_total(true, true),
+//                            'shippingCost' => $order->get_total_shipping(),
+//                            'discount' => $order->get_order_discount()
+//                        ),
+                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.2'
                     );
 
                     $coinzone = new Coinzone($apiKey, $clientCode);
@@ -292,7 +292,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         'currency' => get_woocommerce_currency(),
                         'refNo' => $order->get_transaction_id(),
                         'reason' => $reason,
-                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.1'
+                        'userAgent' => 'wooCommerce ' . WC_VERSION . ' - Plugin Version 1.1.2'
                     );
 
                     $coinzone = new Coinzone($apiKey, $clientCode);
